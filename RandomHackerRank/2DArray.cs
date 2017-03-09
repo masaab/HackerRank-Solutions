@@ -1,0 +1,52 @@
+﻿using System;
+
+namespace RandomHackerRank
+{
+    public class _2DArray
+    {
+        private int[][] arr { get; set; }
+        private long largestSum = 0;
+        public _2DArray()
+        {
+            arr = new int[6][];
+            arr[0] = new int[] { 1, 1, 1, 0, 0, 0 };
+            arr[1] = new int[] { 0 ,1, 0 ,0 ,0 ,0 };
+            arr[2] = new int[] { 1 ,1 ,1, 0, 0 ,0 };
+            arr[3] = new int[] { 0, 0, 2 ,4 ,4 ,0 };
+            arr[4] = new int[] { 0, 0, 0, 2, 0, 0 };
+            arr[5] = new int[] { 0, 0, 1, 2, 4, 0 };
+        }
+
+
+        public long GetLargestGlassHourSum()
+        {
+
+            //for (int arr_i = 0; arr_i < 6; arr_i++)
+            //{
+            //    string[] arr_temp = Console.ReadLine().Split(' ');
+            //    arr[arr_i] = Array.ConvertAll(arr_temp, Int32.Parse);
+            //}
+            for (var row = 0; arr.Length > row; row++)
+            {
+                if ((arr.Length - row) < 3)
+                    break;
+                for (var col = 0; col <= arr[row].Length; col++)
+                {
+                    if ((arr[row].Length - col) < 3)
+                        break;
+                    CreateGlassHour(row, col);
+                }
+            }
+            Console.WriteLine(largestSum);
+            return largestSum;
+        } 
+        private void CreateGlassHour(int row, int col)
+        {
+                int line1 = arr[row][col] + arr[row][col + 1] + arr[row][col + 2];
+                int line2 = arr[row + 1][col + 1];
+                int line3 = arr[row + 2][col] + arr[row + 2][col + 1] + arr[row + 2][col + 2];
+                int total = line1 + line2 + line3;
+                largestSum = total > largestSum ? total : largestSum;
+        }
+    }
+}
