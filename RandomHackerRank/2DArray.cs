@@ -29,15 +29,20 @@ namespace RandomHackerRank
 
         public int? GetLargestGlassHourSum()
         {
+
             //for (int arr_i = 0; arr_i < 6; arr_i++)
             //{
             //    string[] arr_temp = Console.ReadLine().Split(' ');
             //    arr[arr_i] = Array.ConvertAll(arr_temp, Int32.Parse);
             //}
-            for (var row = 0; (arr.Length > row && ((arr.Length - row) > 3)); row++)
+            for (var row = 0; arr.Length > row ; row++)
             {
-                for (var col = 0; (col <= arr[row].Length && ((arr[row].Length - col) > 3)); col++)
+                if ((arr.Length - row) < 3)
+                    break;
+                for (var col = 0; col <= arr[row].Length; col++)
                 {
+                    if ((arr[row].Length - col) < 3)
+                        break;
                     CreateGlassHour(row, col);            
                 }
             }
