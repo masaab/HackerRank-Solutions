@@ -11,8 +11,8 @@ namespace RandomHackerRankTest
         public void _2DArrayTest()
         {
             _2DArray array = new _2DArray();
-            long sum = array.GetLargestGlassHourSum();
-            Assert.AreEqual(sum, 19);
+            int? sum = array.GetLargestGlassHourSum();
+            Assert.AreEqual(-6, sum);
 
         }
     }
