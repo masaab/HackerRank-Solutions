@@ -15,5 +15,13 @@ namespace RandomHackerRankTest
             Assert.AreEqual(-6, sum);
 
         }
+
+        [TestMethod]
+        public void ReplenishBowlTest()
+        {
+            ReplenishBowl test = new ReplenishBowl();
+            var output = test.GetTotalExtraCandiesAdded(8,new int[] { 3, 1, 7, 5 }, 4);
+            Assert.AreEqual(11, output);
+        }
     }
 }
