@@ -11,7 +11,6 @@ namespace _30DaysChallenge
             List<string> list = new List<string>();
             for (int i = 0; i < count; i++)
             {
-                
                 string word = Console.ReadLine();
                 list.Add(word);
             }

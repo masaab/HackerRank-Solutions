@@ -46,9 +46,12 @@
     <Compile Include="2DArray.cs" />
     <Compile Include="ArrayDS.cs" />
     <Compile Include="DrawingBook.cs" />
+    <Compile Include="DynamicArray.cs" />
     <Compile Include="Gemstones.cs" />
     <Compile Include="LeaderBoard.cs" />
     <Compile Include="MarkToy.cs" />
+    <Compile Include="MelodiousPassword.cs" />
+    <Compile Include="MinimumFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
