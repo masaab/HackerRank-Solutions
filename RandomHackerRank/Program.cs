@@ -17,6 +17,8 @@ namespace RandomHackerRank
             // DrawingBook book = new DrawingBook();
             // book.GetInputs();
             // ArrayDS.Result();
+            ReplenishBowl test = new ReplenishBowl();
+            Console.WriteLine(test.GetTotalCandies());
         }
     }
 }
