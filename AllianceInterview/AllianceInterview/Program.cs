@@ -12,8 +12,8 @@ namespace AllianceInterview
     {
         static void Main(string[] args)
         {
-            IOperation op = new Person(" ", " ", new Address(" ", " ", " ", " "));
-            op.Save()
+            Person p = new Person("ss", "dd", new Address("ss", "ss", "ss", "ff"));
+            p.Save();
         }
     }
 }

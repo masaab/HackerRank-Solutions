@@ -7,12 +7,23 @@ using System.Threading.Tasks;
 
 namespace AllianceInterview.Infrastructure
 {
-    public abstract class Operation
+    public abstract class Operation : IOperation
     {
-        public virtual void Save(IOperation operation)
-        {
-            Person person = operation;
+        public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public void Delete()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static Operation Find(string Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save()
+        {
+            throw new NotImplementedException();
         }
     }
 }

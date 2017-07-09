@@ -10,7 +10,7 @@ namespace AllianceInterview.Infrastructure
     {
         string Id { get; set; }
         void Save();
+       
         void Delete();
-        void Find();
     }
 }

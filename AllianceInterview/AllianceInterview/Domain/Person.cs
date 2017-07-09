@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AllianceInterview.Domain
 {
-    public class Person : IOperation
+    public class Person :Operation
     {
         private string FirstName { get; }
         private string LastName { get; }
@@ -18,23 +18,18 @@ namespace AllianceInterview.Domain
             lastName = LastName;
             PersonAddress = personAddress;
         }
-        public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public void Delete()
+        public override string ToString()
         {
-            throw new NotImplementedException();
+            Operation.
+            return "Hello Wolrd";
         }
 
-        public void Find()
+        public static void Find()
         {
-            throw new NotImplementedException();
+            Operation.Find()
         }
+       
 
-        public void Save()
-        {
-            Operation operation``;
-            operation.Save(new Person("","",new Address("","","","")));
-            throw new NotImplementedException();
-        }
     }
 }

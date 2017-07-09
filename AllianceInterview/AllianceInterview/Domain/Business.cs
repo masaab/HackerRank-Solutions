@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AllianceInterview.Domain
 {
-    public class Business : IOperation
+    public class Business 
     {
         private Address BusinessAddress { get; }
         private string Name { get; }
@@ -16,14 +16,14 @@ namespace AllianceInterview.Domain
             BusinessAddress = address;
             Name = name;
         }
-        public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Id { get; set; }
 
         public void Delete()
         {
             throw new NotImplementedException();
         }
 
-        public void Find()
+        public static Business Find(string  Id)
         {
             throw new NotImplementedException();
         }
