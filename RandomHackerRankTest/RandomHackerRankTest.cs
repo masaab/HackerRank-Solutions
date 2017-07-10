@@ -15,6 +15,13 @@ namespace RandomHackerRankTest
         }
 
         [Fact]
+        public void TestME()
+        {
+            ConsoleApp1.TestHttpGet ss = new ConsoleApp1.TestHttpGet();
+            ss.TestME();
+        }
+
+        [Fact]
         public void MinimumFunctionTest()
         {
             MinimumFunction func = new MinimumFunction();
@@ -33,7 +40,7 @@ namespace RandomHackerRankTest
         public void ReplenishBowlTest()
         {
             ReplenishBowl test = new ReplenishBowl();
-            var output = test.GetTotalExtraCandiesAdded(8,new int[] { 3, 1, 7, 5 }, 4);
+            var output = test.GetTotalExtraCandiesAdded(8, new int[] { 3, 1, 7, 5 }, 4);
             Assert.Equal(11, output);
         }
 
@@ -51,12 +58,16 @@ namespace RandomHackerRankTest
             BeautifulWord t = new BeautifulWord();
             var value = t.CheckCorrectString(data);
             Assert.Equal(expectedValue, value);
+        }
 
-            //LinkListDemo demo = new LinkListDemo();
-            //demo.AddNode(new Node { Data = "No1"  });
-            //demo.AddNode(new Node { Data = "No2" });
-            //demo.AddNode(new Node { Data = "No3" });
-
+        [Theory]
+        [InlineData(new int[] { 1, 0, 3, 2 }, true)]
+        [InlineData(new int[] { 2,1,0 }, false)]
+        public void AccurateSortingTest(int[]data,bool expectedValue)
+        {
+            AccurateSorting sort = new AccurateSorting();
+            bool value = sort.CanSort(data);
+            Assert.Equal(expectedValue, value);
         }
     }
 }

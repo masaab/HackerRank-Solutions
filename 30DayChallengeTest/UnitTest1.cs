@@ -4,10 +4,9 @@ using _30DaysChallenge;
 
 namespace _30DayChallengeTest
 {
-    [TestClass]
     public class _30DayChallengeTest
     {
-        [TestMethod]
+    [Fact]
         public void Day1Test()
         {
            DataTypeValue value =   Day1.MainMethod();
