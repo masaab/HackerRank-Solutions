@@ -45,13 +45,18 @@
     <Compile Include="Domain\Address.cs" />
     <Compile Include="Domain\Business.cs" />
     <Compile Include="Domain\Person.cs" />
-    <Compile Include="Infrastructure\IOperation.cs" />
-    <Compile Include="Infrastructure\Operation.cs" />
+    <Compile Include="Infrastructure\EntityDataOperation.cs" />
+    <Compile Include="Infrastructure\Entity.cs" />
+    <Compile Include="Infrastructure\IDataOperation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\Business.txt" />
+    <Content Include="Database\Person.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

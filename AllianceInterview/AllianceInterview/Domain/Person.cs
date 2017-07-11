@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AllianceInterview.Domain
 {
-    public class Person :Operation
+    public class Person :Entity
     {
         private string FirstName { get; }
         private string LastName { get; }
@@ -19,17 +19,9 @@ namespace AllianceInterview.Domain
             PersonAddress = personAddress;
         }
 
-        public override string ToString()
+        public new static Person Find(string Id)
         {
-            Operation.
-            return "Hello Wolrd";
+            return (Person)Entity.Find(Id);
         }
-
-        public static void Find()
-        {
-            Operation.Find()
-        }
-       
-
     }
 }
