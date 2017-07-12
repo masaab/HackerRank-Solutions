@@ -9,11 +9,11 @@ namespace AllianceInterview.Domain
 {
     public class Business:Entity
     {
-        private Address BusinessAddress { get; }
-        private string Name { get; }
+        public Address Address { get; }
+        public string Name { get; }
         public Business(string name, Address address)
         {
-            BusinessAddress = address;
+            Address = address;
             Name = name;
         }
         public new static Business Find(string Id)
@@ -21,6 +21,11 @@ namespace AllianceInterview.Domain
             return (Business)Entity.Find(Id);
         }
 
-     
+        public override string ToString()
+        {
+            return $"{Name} | {Address} | Business";
+        }
+
+
     }
 }

@@ -4,8 +4,9 @@ namespace AllianceInterview.Infrastructure
 {
     public abstract class Entity 
     {
-        public string Id { get; }
+        public string Id { get; set; }
         private IDataOperation Operation { get; }
+
         public Entity()
         {
             Id = Guid.NewGuid().ToString();

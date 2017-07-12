@@ -55,8 +55,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\Business.txt" />
-    <Content Include="Database\Person.txt" />
+    <Content Include="Database\Database.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
