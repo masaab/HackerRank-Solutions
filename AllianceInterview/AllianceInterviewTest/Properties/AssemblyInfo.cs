@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("AllianceInterviewUnitTest")]
+[assembly: AssemblyTitle("AllianceInterviewTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AllianceInterviewUnitTest")]
+[assembly: AssemblyProduct("AllianceInterviewTest")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("912c1aa8-a5e1-4762-a1f3-a8f5b7612ba0")]
+[assembly: Guid("7e679969-3004-4fd9-af58-e889157e403c")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]

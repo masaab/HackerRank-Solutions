@@ -7,30 +7,25 @@ using System.Threading.Tasks;
 
 namespace AllianceInterview.Domain
 {
-    public class Business 
+    public class Business:Entity
     {
-        private Address BusinessAddress { get; }
-        private string Name { get; }
+        public Address Address { get; }
+        public string Name { get; }
         public Business(string name, Address address)
         {
-            BusinessAddress = address;
+            Address = address;
             Name = name;
         }
-        public string Id { get; set; }
-
-        public void Delete()
+        public new static Business Find(string Id)
         {
-            throw new NotImplementedException();
+            return (Business)Entity.Find(Id);
         }
 
-        public static Business Find(string  Id)
+        public override string ToString()
         {
-            throw new NotImplementedException();
+            return $"{Name} | {Address} | Business";
         }
 
-        public void Save()
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

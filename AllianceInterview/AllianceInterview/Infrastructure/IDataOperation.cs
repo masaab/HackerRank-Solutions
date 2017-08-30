@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace AllianceInterview.Infrastructure
 {
-    public interface IOperation
+    public interface IDataOperation
     {
-        string Id { get; set; }
         void Save();
-       
+
         void Delete();
     }
 }
