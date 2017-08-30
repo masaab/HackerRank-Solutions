@@ -4,22 +4,26 @@ namespace RandomHackerRank
 {
     public class DrawingBook
     {
-        int bookSize = 5;
-        int pagenumber = 4;
+        public int BookSize { get; set; }
+        public int PageNumber { get; set; }
         int currentPageNumber = 0;
-        public void GetInputs()
+        int startPoint = 0;
+        
+        public int PageTurningPoint(int bookSize, int pagenumber)
         {
-           var data = ((bookSize / 2) >= pagenumber) ? StartFromBeginning(0) : StartFromEnd(0);
+            BookSize = bookSize;
+            PageNumber = pagenumber;
+
+           return ((bookSize / 2) >= pagenumber) ? StartFromBeginning() : StartFromEnd();
         }
 
-        public int StartFromBeginning(int startPoint)
+        public int StartFromBeginning()
         {
             currentPageNumber = 1;
-            while (startPoint < bookSize)
+            while (startPoint < BookSize)
             {
-                if (currentPageNumber >= pagenumber)
+                if (currentPageNumber >= PageNumber)
                 {
-                    Debug.WriteLine(startPoint);
                     break;
                 }
                 currentPageNumber = currentPageNumber + 2;
@@ -27,18 +31,14 @@ namespace RandomHackerRank
             }
             return startPoint;
         }
-        public int StartFromEnd(int startPoint)
+        public int StartFromEnd()
         {
-            currentPageNumber = bookSize;
-            while (startPoint < bookSize)
+            currentPageNumber = BookSize;
+            while (startPoint < BookSize)
             {
-                if (currentPageNumber % 2 == 0 && currentPageNumber == bookSize)
+                if ((PageNumber % 2 == 0 && currentPageNumber - 1 <= PageNumber)
+                    || currentPageNumber <= PageNumber)
                 {
-                    currentPageNumber--;
-                }
-                if (currentPageNumber <= pagenumber)
-                {
-                    Debug.WriteLine(startPoint);
                     break;
                 }
                 currentPageNumber = currentPageNumber - 2;

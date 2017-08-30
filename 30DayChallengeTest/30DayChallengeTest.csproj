@@ -58,6 +58,10 @@
       <Project>{E010A185-3F47-44E1-A4FC-3BDEAE5D5BBB}</Project>
       <Name>30DaysChallenge</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RandomHackerRank\RandomHackerRank.csproj">
+      <Project>{F55FF165-DA7F-47FB-87B0-39622D2F5734}</Project>
+      <Name>RandomHackerRank</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
