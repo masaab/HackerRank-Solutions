@@ -34,7 +34,6 @@ namespace RandomHackerRank
                     totalCandiesInBowl = totalCandiesPlaceHolder;
                 }
             }
-
             return CandiesAdded;
         }
     }

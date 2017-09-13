@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace RandomHackerRank
+﻿namespace RandomHackerRank
 {
     public class DrawingBook
     {

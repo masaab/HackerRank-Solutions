@@ -49,6 +49,8 @@
     <Compile Include="BonAppetit.cs" />
     <Compile Include="DrawingBook.cs" />
     <Compile Include="Gemstones.cs" />
+    <Compile Include="HalloweenSale.cs" />
+    <Compile Include="JesseRock.cs" />
     <Compile Include="LeaderBoard.cs" />
     <Compile Include="MarkToy.cs" />
     <Compile Include="Program.cs" />

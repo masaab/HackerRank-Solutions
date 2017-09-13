@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using RandomHackerRank;
 using Xunit;
+using System.Linq;
 
 namespace RandomHackerRankTest
 {
@@ -57,6 +58,26 @@ namespace RandomHackerRankTest
                 var value = book.PageTurningPoint(bookSize, pageNumber);
                 Assert.Equal(expectedInteger, value);
             }
+        }
+
+        [Theory]
+        [InlineData(6,3)]
+        public void JesseStrengthTest(int JesseStrength, int expectedAnswer)
+        {
+            int[] stones = { 4, 3, 7, 6, 7, 2, 2 };
+            JesseRock.GetInputs(stones.ToList(), JesseStrength);
+        }
+
+        [Theory]
+        [InlineData(20, 3, 6, 80, 6)]
+        [InlineData(20, 3, 6, 85, 7)]
+        [InlineData(100, 1, 1, 99, 0)]
+        [InlineData(100,99,81,180, 1)]
+        public void HalloweenSale(int originalPrice, int priceDeduction, int thresholdPrice, int userAmount, int expectedResult)
+        {
+            HalloweenSale sale = new HalloweenSale();
+            int actualResult = sale.CalculateTotalGames(originalPrice, priceDeduction, thresholdPrice, userAmount);
+            Assert.Equal(actualResult, expectedResult);
         }
     }
 }
