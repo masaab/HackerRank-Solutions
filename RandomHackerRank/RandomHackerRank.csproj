@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplenishBowl.cs" />
     <Compile Include="SockMerchant.cs" />
+    <Compile Include="StrongPassword.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
