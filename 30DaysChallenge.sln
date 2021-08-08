@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30DaysChallenge", "30DaysChallenge\30DaysChallenge.csproj", "{E010A185-3F47-44E1-A4FC-3BDEAE5D5BBB}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{2F740212-6051-4102-BB1A-8A20341F919A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTester", "AppTester\AppTester.csproj", "{FC7334F4-9794-44AC-9A71-7D6DBB992D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30DaysChallenge.UnitTests", "30DaysChallenge.UnitTests\30DaysChallenge.UnitTests.csproj", "{57ADC2EE-1416-47F8-8070-064D7FCF6765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{FC7334F4-9794-44AC-9A71-7D6DBB992D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC7334F4-9794-44AC-9A71-7D6DBB992D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC7334F4-9794-44AC-9A71-7D6DBB992D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57ADC2EE-1416-47F8-8070-064D7FCF6765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57ADC2EE-1416-47F8-8070-064D7FCF6765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57ADC2EE-1416-47F8-8070-064D7FCF6765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57ADC2EE-1416-47F8-8070-064D7FCF6765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D60EFEC9-5811-4B9F-AB5E-AFBE9F032075}
 	EndGlobalSection
 EndGlobal
