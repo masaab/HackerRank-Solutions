@@ -7,22 +7,6 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-
-    public class TestHttpGet
-    {
-        public async void TestME()
-        {
-            var httpClient = new HttpClient();
-            var response = await httpClient.GetAsync("https://creditorwatch.com.au/apiv_1_0_0/credit_score/id/e34efa3403c4f206c11404a6fbc37cd0/key/6c1da992/abn/73077778815");
-
-            //will throw an exception if not successful
-            response.EnsureSuccessStatusCode();
-
-            string content = await response.Content.ReadAsStringAsync();
-            //await Task.Run(() => JsonObject.Parse(content));
-        }
-    }
-
     public class AccurateSorting
     {
 

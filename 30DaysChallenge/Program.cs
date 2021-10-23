@@ -18,8 +18,7 @@ namespace _30DaysChallenge
 
             // Day6.MainMethod();
 
-            Day7.MainMethod();
-
+            //Day7.MainMethod();
         }
     }
 }

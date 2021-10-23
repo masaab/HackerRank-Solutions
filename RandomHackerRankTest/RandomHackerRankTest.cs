@@ -15,13 +15,6 @@ namespace RandomHackerRankTest
         }
 
         [Fact]
-        public void TestME()
-        {
-            ConsoleApp1.TestHttpGet ss = new ConsoleApp1.TestHttpGet();
-            ss.TestME();
-        }
-
-        [Fact]
         public void MinimumFunctionTest()
         {
             MinimumFunction func = new MinimumFunction();
