@@ -8,9 +8,16 @@ namespace _30DaysChallenge
 {
     public class Day10
     {
-        public void ConvertToBinary()
+        public static string GetBase2(int input)
+            => Convert.ToString(input, 2);
+
+        public static int CountTotalConsecutiveOne(int input)
         {
-            //TO DO: 
+            var result = GetBase2(input);
+            var data = result.Split('0');
+            var ss = data.OrderBy(a => a.ToString().Length).Last();
+            return ss.Length;
         }
+
     }
 }
